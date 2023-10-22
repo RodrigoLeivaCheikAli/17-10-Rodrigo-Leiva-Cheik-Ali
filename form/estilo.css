@@ -1,0 +1,18 @@
+:root{
+    --colorClaro: lightblue;
+    --ColorBoton: aquamarine;
+}
+*{
+    margin: 0px;
+    
+}
+.Formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--colorClaro);
+    padding: 10px;
+}
+#Enviar{
+    background-color: var(--ColorBoton);
+}

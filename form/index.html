@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form action="https://formspree.io/f/xleyavze" method="post" class="Formulario">
+        <label for="">Instituto Superior Villa del Rosario </label>
+        <label for="NombreUsuario">Nombre
+            <input type="text" name = "NombreUsuario" id="NombreUsuario" required>
+        </label>
+        <label for="Apellido">Apellido
+            <input type="text" name="Apellido" id="Apellido" required>
+        </label>
+        <label for="email"> email
+            <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" required>
+        </label>
+        <label for="TurnoCursado"> Seleccione un turno
+            <label for="Tmañana">Mañana
+                <input type="radio" name="Turno" value="Mañana" id="Tmañana">
+            </label>
+            <label for="Ttarde">Tarde
+                <input type="radio" name="Turno" value="Tarde" id="Ttarde">
+            </label>
+            <label for="Tnoche">Noche
+                <input type="radio" name="Turno" value="Noche" id="Tnoche">
+            </label>
+        </label>
+        <label for="Tecnicaturas">Seleccione las Tecnicaturas
+            <label for="TS">Software
+                <input type="checkbox" name="Tecnicatura" id="TS" value="TS">
+            </label>
+            <label for="TM">Molienda
+                <input type="checkbox" name="Tecnicatura" id="TM" value="TM">
+            </label>
+            <label for="RH">Recursos HUmanos
+                <input type="checkbox" name="Tecnicatura" id="RH" value="RH">
+            </label>
+        </label>
+        <label for="PaisOrigen">Seleccione un pais de origen
+        <select name="PaisOrigen" id="PaisOrigen">
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="SeleccionarPais" selected disabled hidden>SeleccionarPais</option>
+        </select>
+    </label>
+    <label for="fechNac">Ingrese Fecha de Nacimiento
+        <input type="date" name="fechNac" id="fechNac">
+    </label>
+    <label for="comentario">Ingrese un comentario
+        <textarea name="comentarioUsuario" id="comentario" maxlength="4" minlength="3" placeholder="Ingrese un comentario"></textarea>
+    </label>
+    <input type="submit" value="Enviar" id="Enviar">
+    </form>
+</body>
+</html>
